@@ -1,0 +1,676 @@
+/* Google Font css link */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+/* Google Font css link */
+
+/* Root color and font family */
+:root {
+    --oswald-font: "Oswald", sans-serif;
+    --openSans-font: "Open Sans", sans-serif;
+    --btn-bg: #0872b9;
+    --primary-color: #353535;
+    --Secondary-color: #ffffff;
+}
+
+/* Root color and font family */
+/* basic css desing file */
+/* Target all browsers */
+input[type=number] {
+    -moz-appearance: textfield;
+    /* For Firefox */
+    -webkit-appearance: none;
+    /* For Chrome, Safari, Edge */
+    appearance: none;
+    /* For modern browsers */
+}
+
+/* Optional: Hide the up/down arrows in WebKit-based browsers (like Chrome) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+}
+
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+span,
+table,
+footer,
+nav {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+/* basic css style desing ended */
+/* header part css desing started */
+
+.header_top_main {
+    width: 100%;
+    background-color: var(--btn-bg);
+}
+
+.header_top {
+    padding: 10px 0px;
+
+}
+
+.header_top .header_left p {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: var(--openSans-font);
+    color: var(--Secondary-color);
+
+
+}
+
+.header_top .header_right ul li a {
+    padding: 12.5px;
+
+
+
+}
+
+.header_top .header_right a {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: var(--openSans-font);
+    color: var(--Secondary-color);
+
+
+}
+
+.header_top .header_right a:hover {
+    color: var(--primary-color)
+}
+
+/* nav-bar desing css part start */
+.nav_main {
+    padding: 25px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+
+    font-family: var(--openSans-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--primary-color);
+    transition: all linear 0.3s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+
+    font-weight: 600;
+    color: var(--btn-bg);
+    transition: all linear 0.3s;
+}
+
+/* nav-bar desing css part end */
+
+/* header part css desing Ended */
+/* banner section css desing started */
+.banner_main {
+    width: 100%;
+    padding: 100px 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../image/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: right;
+}
+
+.banner_main .banner_content h4 {
+    font-family: var(--oswald-font);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50px;
+    color: var(--Secondary-color);
+    text-transform: uppercase;
+}
+
+.banner_main .banner_content h1 {
+    font-family: var(--oswald-font);
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 60px;
+    color: var(--Secondary-color);
+    text-transform: uppercase;
+}
+
+.banner_main .banner_content p {
+    font-family: var(--openSans-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--Secondary-color);
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 580px;
+    margin-left: auto;
+}
+
+.banner_main .banner_content a {
+    font-family: var(--oswald-font);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    padding: 8px 20px;
+    background-color: var(--btn-bg);
+    color: var(--Secondary-color);
+}
+
+.banner_main .banner_content .banner_btn_2 {
+    margin-left: 30px;
+}
+
+.banner_main .banner_content a:hover {
+    background-color: transparent;
+    color: var(--Secondary-color);
+    border: 1px solid #ffffff;
+}
+
+/* banner section css desing Ended */
+/* about section css desing start */
+.page_title {
+    text-align: center;
+    padding: 70px 0px;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+}
+
+.page_title h1 {
+    font-family: var(--oswald-font);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--primary-color);
+    position: relative;
+    text-transform: uppercase;
+}
+
+.page_title h1::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    background-color: var(--btn-bg);
+    border-radius: 1px;
+}
+
+.about_main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+.about_main p {
+    font-family: var(--openSans-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--primary-color);
+}
+
+/* about section css desing End */
+/* service section css part start */
+.service_content {
+    width: 32%;
+    height: 180px;
+    background-color: #f1f1f1;
+    margin: 40px 0px;
+    text-align: center;
+    padding: 0 10px;
+    transition: all linear 0.3s;
+}
+
+.service_content:hover {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.service_content:hover .service_icon {
+    background-color: #5bc5f4;
+    transition: all linear 0.3s;
+}
+
+.service_content .service_icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: -40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    outline: 5px solid var(--Secondary-color);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.service_content h1 {
+    font-family: var(--oswald-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    color: var(--primary-color);
+}
+
+.service_content p {
+    font-family: var(--openSans-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--primary-color);
+}
+
+/* service section css part End */
+
+/* protfolio section css part started */
+            .p_t{
+                width: 100%;
+                position: relative;
+            }
+            .p_t:hover .p_t_icon{
+
+                transform: scale(1);
+                transition: all linear 0.3s;
+
+            }
+            .p_t_icon{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all linear 0.3s;
+                        transform: scale(0);
+
+            }
+
+            .p_t_icon i{
+                            width: 40px;
+                            height:40px;
+                            border-radius: 50%;
+                            background-color: #5bc5f4;
+                            color: white;
+                            font-size: 16px;
+                            line-height: 40px;
+                            text-align: center;
+
+
+
+            }
+
+/* protfolio section css part Ended */
+/* our team section css part start */
+.team_main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.team_main .team_content {
+    width: 23%;
+    text-align: center;
+
+}
+
+.team_main .team_content .team_top {
+    position: relative;
+    width: 100%;
+    transition: all linear 0.3s
+}
+
+.team_main .team_content .team_top:hover {
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.team_main .team_content .team_top img {
+    width: 100%;
+}
+
+.team_main .team_content .team_top:hover .team_icon {
+    width: 100px;
+}
+
+.team_main .team_content .team_top:hover .team_icon ul li {
+    display: block;
+}
+
+.team_main .team_content .team_top .team_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 00px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s
+}
+
+.team_main .team_content .team_top .team_icon ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--Secondary-color);
+    margin: 10px 0px;
+    cursor: pointer;
+    display: none;
+}
+
+.team_main .team_content .team_top .team_icon ul li:hover {
+    background-color: #5bc5f4;
+    border: 1px solid #5bc5f4;
+}
+
+.team_main .team_content .team_top .team_icon ul li a {
+
+    font-size: 18px;
+    line-height: 40px;
+    color: var(--Secondary-color);
+}
+
+.team_main .team_content h1 {
+    font-family: var(--oswald-font);
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.team_main .team_content h1:hover {
+    color: var(--btn-bg);
+}
+
+.team_main .team_content p {
+    font-family: var(--openSans-font);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+/* our team section css part End */
+/* testomonials section css start */
+.testimonials_main {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.testimonials_main .testimonials_content {
+    width: 49%;
+}
+
+.testimonial_top {
+    padding: 30px 0px;
+
+}
+
+.testimonial_bottom {
+    width: 100%;
+    background-color: #f1f1f1;
+    position: relative;
+    padding: 20px 10px;
+    margin: 20px 0px;
+
+}
+
+.testimonial_bottom::after {
+
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.testimonial_bottom h1 {
+
+    font-family: var(--oswald-font);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.testimonial_bottom ul li {
+    display: inline-block;
+    padding: 7px 1px;
+    color: #5bc5f4;
+    font-size: 14px;
+}
+
+.testimonial_bottom h2 {
+    font-family: var(--oswald-font);
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.testimonial_bottom p {
+    font-family: var(--oswald-font);
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+/* testomonials section css End */
+/* footer section css part started */
+.footer_top {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px 0px;
+
+
+}
+
+.footer_top_main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+
+.footer_top_main .footer_content p {
+
+    font-family: var(--openSans-font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--Secondary-color);
+    margin-top: 20px;
+    width: 300px;
+}
+
+.footer_top_main .footer_content p span {
+
+    display: block;
+    margin-top: 20px;
+}
+
+.footer_top_main .footer_content h1 {
+
+    font-family: var(--oswald-font);
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--Secondary-color);
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+
+.footer_contact {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.footer_contact .footer_left i {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #5bc5f4;
+    font-size: 16px;
+    line-height: 40px;
+    color: var(--Secondary-color);
+
+}
+
+.footer_contact .footer_right ul li {
+    display: block;
+}
+
+.footer_contact .footer_right ul li a {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--Secondary-color);
+
+}
+
+.footer_nav_main {
+    width: 140px;
+    display: flex;
+    justify-content: flex-start;
+
+    gap: 30px;
+}
+
+.footer_content .nav_bottom {
+    margin-top: -10px;
+}
+
+.footer_content .nav_bottom li {
+    display: block;
+    width: 100%;
+    padding: 7px 0px;
+
+}
+
+.footer_content .nav_bottom li span {
+
+    margin-left: 40px;
+
+
+}
+
+.footer_content .nav_bottom li a {
+    font-family: var(--oswald-font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--Secondary-color);
+
+}
+
+.footer_content .nav_bottom li a:hover {
+    color: #5bc5f4;
+}
+
+.footer_img_main {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer_bottom{
+    background-color: #555555;
+    padding: 10px 0px;
+    text-align: center;
+}
+.footer_bottom .footer_content p{
+    font-family: var(--openSans-font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.footer_bottom .footer_content span a{
+    font-family: var(--openSans-font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #5bc5f4;
+    text-transform: lowercase;
+}
+.footer_img img{
+    width: 120px;
+}
+/* footer section css part Ended */
